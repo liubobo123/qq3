@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jiyun_qq1.com.myapplication.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="充值提交"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/oen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单信息"
+        android:textColor="#333"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+ />
+
+    <TextView
+        android:paddingLeft="10dp"
+
+        android:id="@+id/tew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="应付金额:"
+        android:textColor="#999"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/oen"
+
+        />
+<TextView
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="25dp"
+    app:layout_constraintTop_toBottomOf="@+id/oen"
+    android:layout_width="wrap_content"
+    android:text="$600"
+    android:textSize="28sp"
+    android:textColor="#333"
+    app:layout_constraintLeft_toRightOf="@id/tew"
+    android:layout_height="wrap_content" />
+<TextView
+    android:paddingLeft="10dp"
+    android:layout_width="wrap_content"
+    android:id="@+id/text3"
+    android:text="订单信息:"
+    android:textColor="#999"
+    android:layout_marginTop="5dp"
+    android:textSize="28sp"
+    app:layout_constraintLeft_toLeftOf="@+id/tew"
+    app:layout_constraintTop_toBottomOf="@+id/tew"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tew"
+        android:layout_width="wrap_content"
+        android:text="充值600金币"
+        android:textSize="28sp"
+        android:textColor="#333"
+        app:layout_constraintLeft_toRightOf="@id/tew"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:text="选择支付方式"
+        android:textSize="28sp"
+        android:gravity="left"
+        android:textColor="#999"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text3"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/jinqian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+  >
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ddd"
+            android:layout_width="386dp"
+            android:layout_height="118px"
+>
+
+            <ImageView
+                android:id="@+id/img_zhifu"
+
+
+                android:layout_width="73dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/zhifu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/zhifu_text1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="支付宝支付"
+                android:textColor="#333"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/img_zhifu"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/imageView"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+               android:background="@drawable/checkbox_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/zhifu_text1"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ccc"
+            android:layout_width="386dp"
+            android:layout_height="118px"
+            app:layout_constraintTop_toBottomOf="@+id/ddd"
+            >
+
+            <ImageView
+                android:id="@+id/weixin"
+
+
+                android:layout_width="73dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/weixin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/zhifu_text2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="微信支付集"
+                android:textColor="#333"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/weixin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/imageView2"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/checkbox_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/zhifu_text2"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/www"
+            android:layout_width="386dp"
+            android:layout_height="118px"
+            app:layout_constraintTop_toBottomOf="@+id/ccc"
+            >
+
+            <ImageView
+                android:id="@+id/lianlian"
+
+
+                android:layout_width="73dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/lianlian"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/zhifu_text3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="连连支付集"
+                android:textColor="#333"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lianlian"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/imageView3"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/checkbox_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/zhifu_text3"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/xieyi"
+        android:layout_width="386dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jinqian">
+
+        <CheckBox
+            android:id="@+id/xieyi_img"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/checkbox_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="323dp"
+            android:layout_height="0dp"
+
+            android:layout_marginBottom="8dp"
+
+            android:text="我已阅读并同意遵守  《充值协议》，并愿意承担"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/liji"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xieyi" />
+</android.support.constraint.ConstraintLayout>
